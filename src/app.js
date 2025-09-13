@@ -27,7 +27,7 @@ app.get("/creators", (_req, res) => {
 });
 
 app.get("/integrantes", (_req, res) => {
-  res.json({ name: "Arnol Perez, Jesus Cabezas & Daniel Leon"});
+  res.json({ name: "Arnol Perez, Jesus Cabezas & Daniel F Leon"});
 });
 
 app.listen(PORT, () => {

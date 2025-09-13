@@ -18,6 +18,10 @@ app.get("/version", (_req, res) => {
   res.json({ name: "hello-cloud", version: "1.0.0" });
 });
 
+app.get("/ping", (_req, res) => {
+  res.json({ pong: true, at: new Date().toISOString() });
+});
+
 app.get("/creators", (_req, res) => {
   res.json({ name: "Arnol Perez, Jesus Cabezas & Daniel Leon"});
 });

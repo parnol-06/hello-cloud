@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 app.get("/", (_req, res) => {
   res.json({
     message: "Hello Cloud ☁️",
-    docs: ["/health", "/version"]
+    docs: ["/health", "/version","/creator"]
   });
 });
 
@@ -16,6 +16,10 @@ app.get("/health", (_req, res) => {
 
 app.get("/version", (_req, res) => {
   res.json({ name: "hello-cloud", version: "1.0.0" });
+});
+
+app.get("/creator", (_req, res) => {
+  res.json({ name: "Arnol Perez"});
 });
 
 app.listen(PORT, () => {

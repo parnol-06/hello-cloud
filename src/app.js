@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 app.get("/", (_req, res) => {
   res.json({
     message: "Hello Cloud ☁️",
-    docs: ["/health", "/version","/creator"]
+    docs: ["/health", "/version","/creator","/integrantes"]
   });
 });
 
@@ -23,6 +23,10 @@ app.get("/ping", (_req, res) => {
 });
 
 app.get("/creators", (_req, res) => {
+  res.json({ name: "Arnol Perez, Jesus Cabezas & Daniel Leon"});
+});
+
+app.get("/integrantes", (_req, res) => {
   res.json({ name: "Arnol Perez, Jesus Cabezas & Daniel Leon"});
 });
 

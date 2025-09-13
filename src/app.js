@@ -18,8 +18,8 @@ app.get("/version", (_req, res) => {
   res.json({ name: "hello-cloud", version: "1.0.0" });
 });
 
-app.get("/creator", (_req, res) => {
-  res.json({ name: "Arnol Perez"});
+app.get("/creators", (_req, res) => {
+  res.json({ name: "Arnol Perez, Jesus Cabezas & Daniel Leon"});
 });
 
 app.listen(PORT, () => {

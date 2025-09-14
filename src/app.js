@@ -23,7 +23,7 @@ app.get("/ping", (_req, res) => {
 });
 
 app.get("/creators", (_req, res) => {
-  res.json({ name: "Arnol Perez, Jesus Cabezas & Daniel Leon"});
+  res.json({ name: "Arnol F Perez, Jesus A Cabezas & Daniel Leon"});
 });
 
 app.get("/integrantes", (_req, res) => {
